@@ -1,131 +1,164 @@
-<html dir="ltr" lang="ja">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="google-site-verification" content="OoAHNYRgj3r2laWizVSP-ADRy5ylxScUuYMZ1-e0EOs" />
     <title>reCAPTCHA Creator</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/styles__ltr.css"
-    />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QCL5P960S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/styles__ltr.css">
+    <script>
+      window.addEventListener(
+        'DOMContentLoaded',
+        function () {
+          /*
+            Q. Why not just for-loop them?
+            A. What do you expect to Netscape Navigator?
+          */
+          document.getElementById('text1-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('text1').innerHTML =
+                document.getElementById('text1-input').value
+            },
+            false
+          )
+          document.getElementById('text2-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('text2').innerHTML =
+                document.getElementById('text2-input').value
+            },
+            false
+          )
+          document.getElementById('text3-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('text3').innerHTML =
+                document.getElementById('text3-input').value
+            },
+            false
+          )
 
-  gtag('config', 'G-9QCL5P960S');
-</script>
-  <body
-    style="
-            position:relative;
-        left:50%;
-        transform: translate(-50%);
-        -webkit-transform: translate(-50%);
-        display:inline-block;
-      width: 400px;
-      height: 400px;
-      background-color: skyblue;
-    "
-  >
-  <div align="center"><h1>reCAPTCHA Creator</h1>
-    <p>あなたの好みのreCAPTCHAを作ろう!!</p></div>
+          document.getElementById('img1-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('1').src =
+                document.getElementById('img1-input').value
+            },
+            false
+          )
+          document.getElementById('img2-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('2').src =
+                document.getElementById('img2-input').value
+            },
+            false
+          )
+          document.getElementById('img3-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('3').src =
+                document.getElementById('img3-input').value
+            },
+            false
+          )
+          document.getElementById('img4-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('4').src =
+                document.getElementById('img4-input').value
+            },
+            false
+          )
+          document.getElementById('img5-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('5').src =
+                document.getElementById('img5-input').value
+            },
+            false
+          )
+          document.getElementById('img6-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('6').src =
+                document.getElementById('img6-input').value
+            },
+            false
+          )
+          document.getElementById('img7-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('7').src =
+                document.getElementById('img7-input').value
+            },
+            false
+          )
+          document.getElementById('img8-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('8').src =
+                document.getElementById('img8-input').value
+            },
+            false
+          )
+          document.getElementById('img9-input').addEventListener(
+            'input',
+            function () {
+              document.getElementById('9').src =
+                document.getElementById('img9-input').value
+            },
+            false
+          )
+        },
+        false
+      )
+    </script>
+  </head>
+  <body style="background-color: skyblue; margin: 0px; padding: 0px; text-align: center">
+    <div style="margin-left: auto; margin-right: auto; width: 400px">
+      <h1>reCAPTCHA Creator</h1>
+      <p>あなたの好みのreCAPTCHAを作ろう!!</p>
 
-      <div id="rc-imageselect">
+      <div id="rc-imageselect" style="text-align: left;">
         <div class="rc-imageselect-response-field"></div>
         <span class="rc-imageselect-tabloop-begin" tabindex="0"></span>
         <div class="rc-imageselect-payload">
           <div class="rc-imageselect-instructions">
             <div class="rc-imageselect-desc-wrapper">
-              <div
-                class="rc-imageselect-desc-no-canonical"
-                style="width: 352px; font-size: 16px"
-              >
-                <strong style="font-size: 28px" id="text1">テキスト１</strong
-                ><span style="font-size: 16px" id="text2">テキスト２</span>
+              <div class="rc-imageselect-desc-no-canonical" style="width: 352px; font-size: 16px">
+                <strong style="font-size: 28px" id="text1">テキスト１</strong>
+                <span style="font-size: 16px" id="text2">テキスト２</span>
               </div>
             </div>
             <div class="rc-imageselect-progress"></div>
           </div>
           <div class="rc-imageselect-challenge">
-            <div
-              id="rc-imageselect-target"
-              class="rc-imageselect-target"
-              dir="ltr"
-              role="presentation"
-              aria-hidden="true"
-            >
+            <div id="rc-imageselect-target" class="rc-imageselect-target" dir="ltr" role="presentation" aria-hidden="true">
               <table class="rc-imageselect-table-33">
                 <tbody>
                   <tr>
-                    <td
-                      role="button"
-                      tabindex="4"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="4" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="1"
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像１"
-                            style="top: 0%; left: 0%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="1" class="rc-image-tile-33" src="" alt="画像１" style="top: 0%; left: 0%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="5"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="5" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="2"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像２"
-                            style="top: 0%; left: -100%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="2" class="rc-image-tile-33" src="" alt="画像２" style="top: 0%; left: -100%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="6"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="6" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                                                    id="3"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像３"
-                            style="top: 0%; left: -200%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="3" class="rc-image-tile-33" src="" alt="画像３" style="top: 0%; left: -200%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
@@ -133,73 +166,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td
-                      role="button"
-                      tabindex="7"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="7" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="4"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像４"
-                            style="top: -100%; left: 0%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="4" class="rc-image-tile-33" src="" alt="画像４" style="top: -100%; left: 0%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="8"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="8" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="5"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像５"
-                            style="top: -100%; left: -100%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="5" class="rc-image-tile-33" src="" alt="画像５" style="top: -100%; left: -100%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="9"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="9" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="6"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像６"
-                            style="top: -100%; left: -200%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="6" class="rc-image-tile-33" src="" alt="画像６" style="top: -100%; left: -200%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
@@ -207,73 +195,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td
-                      role="button"
-                      tabindex="10"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="10" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="7"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像７"
-                            style="top: -200%; left: 0%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="7" class="rc-image-tile-33" src="" alt="画像７" style="top: -200%; left: 0%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="11"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="11" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                          id="8"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像８"
-                            style="top: -200%; left: -100%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="8" class="rc-image-tile-33" src="" alt="画像８" style="top: -200%; left: -100%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
                       </div>
                     </td>
-                    <td
-                      role="button"
-                      tabindex="12"
-                      class="rc-imageselect-tile"
-                      aria-label="確認用画像"
-                    >
+                    <td role="button" tabindex="12" class="rc-imageselect-tile" aria-label="確認用画像">
                       <div class="rc-image-tile-target">
-                        <div
-                          class="rc-image-tile-wrapper"
-                          style="width: 126px; height: 126px"
-                        >
-                          <img
-                            id="9"
-
-                            class="rc-image-tile-33"
-                            src=""
-                            alt="画像９"
-                            style="top: -200%; left: -200%"
-                          />
+                        <div class="rc-image-tile-wrapper" style="width: 126px; height: 126px">
+                          <img id="9" class="rc-image-tile-33" src="" alt="画像９" style="top: -200%; left: -200%">
                           <div class="rc-image-tile-overlay"></div>
                         </div>
                         <div class="rc-imageselect-checkbox"></div>
@@ -291,122 +234,60 @@
             <div class="primary-controls">
               <div class="rc-buttons">
                 <div class="button-holder reload-button-holder">
-                  <button
-                    class="rc-button goog-inline-block rc-button-reload"
-                  ></button>
+                  <button class="rc-button goog-inline-block rc-button-reload"></button>
                 </div>
                 <div class="button-holder audio-button-holder">
-                  <button
-                    class="rc-button goog-inline-block rc-button-audio"
-                  ></button>
+                  <button class="rc-button goog-inline-block rc-button-audio"></button>
                 </div>
                 <div class="button-holder image-button-holder">
-                  <button
-                    class="rc-button goog-inline-block rc-button-image"
-                    style="display: none"
-                  ></button>
+                  <button class="rc-button goog-inline-block rc-button-image" style="display: none"></button>
                 </div>
                 <div class="button-holder help-button-holder">
-                  <button
-                    class="rc-button goog-inline-block rc-button-help"
-                  ></button>
+                  <button class="rc-button goog-inline-block rc-button-help"></button>
                 </div>
                 <div class="button-holder undo-button-holder">
-                  <button
-                    class="rc-button goog-inline-block rc-button-undo"
-                    style="display: none"
-                  ></button>
+                  <button class="rc-button goog-inline-block rc-button-undo" style="display: none"></button>
                 </div>
               </div>
               <div class="verify-button-holder">
-                <button
-                id="text3"
-                  class="rc-button-default goog-inline-block"
-                >
-                  テキスト３
-                </button>
+                <button id="text3" class="rc-button-default goog-inline-block">テキスト３</button>
               </div>
             </div>
-            <div
-              class="rc-challenge-help"
-              style="display: none"
-            ></div>
+            <div class="rc-challenge-help" style="display: none"></div>
           </div>
         </div>
         <span class="rc-imageselect-tabloop-end" tabindex="0"></span>
       </div>
+      <br>
+      <h1>文字置き換え</h1>
+      <p>文字を入力するとすぐに反映されます。</p>
+      <label>テキスト１ : <input id="text1-input" placeholder="横断歩道"></label><br>
+      <label>テキスト２ : <input id="text2-input" placeholder="の画像を選択してください。"></label><br>
+      <label>テキスト３ : <input id="text3-input" placeholder="確認"></label><br>
+      <h1>画像置き換え</h1>
+      <p>
+        画像は9個までで、画像のURLまたは<br>Base64型式のコードを入力してください。
+      </p>
+      <label>画像１ : <input id="img1-input"></label><br>
+      <label>画像２ : <input id="img2-input"></label><br>
+      <label>画像３ : <input id="img3-input"></label><br>
+      <label>画像４ : <input id="img4-input"></label><br>
+      <label>画像５ : <input id="img5-input"></label><br>
+      <label>画像６ : <input id="img6-input"></label><br>
+      <label>画像７ : <input id="img7-input"></label><br>
+      <label>画像８ : <input id="img8-input"></label><br>
+      <label>画像９ : <input id="img9-input"></label><br>
+
+      <h3>連絡先</h3>
+      <p>
+        もし開発者に伝えたいことがあるなら、Twitter @taikoclane_roii または
+        Discord Roii.py#7084 までご連絡ください。
+      </p>
+      <h3>使用するとき</h3>
+      <p>
+        利用者は無料で好きなreCAPTCHAを作ることが出来ますが、Twitterなどで呟く場合は「reCAPTCHA
+        Creatorを使って作った!!」等と言った事も含んで呟いて頂けると有難いです。
+      </p>
     </div>
-    <center>
-    <br>
-    <h1>文字置き換え</h1>
-    <p>文字を入力するとすぐに反映されます。</p>
-    <label>テキスト１ : <input id="text1-input" placeholder="横断歩道"></label><br>
-    <label>テキスト２ : <input id="text2-input" placeholder="の画像を選択してください。"></label><br>
-    <label>テキスト３ : <input id="text3-input" placeholder="確認"></label><br>
-<h1>画像置き換え</h1>
-<p>画像は9個までで、画像のURLまたは<br>Base64型式のコードを入力してください。</p>
-    <label>画像１ : <input id="img1-input"></label><br>
-    <label>画像２ : <input id="img2-input"></label><br>
-    <label>画像３ : <input id="img3-input"></label><br>
-    <label>画像４ : <input id="img4-input"></label><br>
-    <label>画像５ : <input id="img5-input"></label><br>
-    <label>画像６ : <input id="img6-input"></label><br>
-    <label>画像７ : <input id="img7-input"></label><br>
-    <label>画像８ : <input id="img8-input"></label><br>
-    <label>画像９ : <input id="img9-input"></label><br>
-
-    <script>
-window.addEventListener('DOMContentLoaded', function(){
-  
-  document.getElementById("text1-input").addEventListener("input",function(){
-    document.getElementById("text1").innerHTML = document.getElementById("text1-input").value;
-  });
-
-  document.getElementById("text2-input").addEventListener("input",function(){
-    document.getElementById("text2").innerHTML = document.getElementById("text2-input").value;
-  });
-
-  document.getElementById("text3-input").addEventListener("input",function(){
-    document.getElementById("text3").innerHTML = document.getElementById("text3-input").value;
-  });
-
-  document.getElementById("img1-input").addEventListener("input",function(){
-    document.getElementById("1").src = document.getElementById("img1-input").value;
-  });
-
-  document.getElementById("img2-input").addEventListener("input",function(){
-    document.getElementById("2").src = document.getElementById("img2-input").value;
-  });
-  document.getElementById("img3-input").addEventListener("input",function(){
-    document.getElementById("3").src = document.getElementById("img3-input").value;
-  });
-  document.getElementById("img4-input").addEventListener("input",function(){
-    document.getElementById("4").src = document.getElementById("img4-input").value;
-  });
-  document.getElementById("img5-input").addEventListener("input",function(){
-    document.getElementById("5").src = document.getElementById("img5-input").value;
-  });
-  document.getElementById("img6-input").addEventListener("input",function(){
-    document.getElementById("6").src = document.getElementById("img6-input").value;
-  });
-  document.getElementById("img7-input").addEventListener("input",function(){
-    document.getElementById("7").src = document.getElementById("img7-input").value;
-  });
-  document.getElementById("img8-input").addEventListener("input",function(){
-    document.getElementById("8").src = document.getElementById("img8-input").value;
-  });
-  document.getElementById("img9-input").addEventListener("input",function(){
-    document.getElementById("9").src = document.getElementById("img9-input").value;
-  });
-
-
-  
-});
-    </script>
-    <h3>連絡先</h3>
-    <p>もし開発者に伝えたいことがあるなら、Twitter @taikoclane_roii または Discord Roii.py#7084 までご連絡ください。</p>
-    <h3>使用するとき</h3>
-    <p>利用者は無料で好きなreCAPTCHAを作ることが出来ますが、Twitterなどで呟く場合は「reCAPTCHA Creatorを使って作った!!」等と言った事も含んで呟いて頂けると有難いです。</p>
-    </center>
   </body>
 </html>
